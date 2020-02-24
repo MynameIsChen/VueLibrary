@@ -1,0 +1,88 @@
+/* 关注页面 */
+
+.follow-info {
+    width: 5.5rem;
+    height: 6.8rem;
+    position: relative;
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-layer {
+    width: 5.5rem;
+    height: 6.8rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #f2f2f2;
+}
+
+.follow-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #FFFFFF;
+    border: 0.02rem solid #DDD;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.follow-code {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: #F2F2F2;
+    border: 0.02rem solid #DDD;
+    border-radius: 0.1rem;
+    position: relative;
+}
+
+.code-no {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-add {
+    font-size: 2rem;
+    line-height: 1.4rem;
+    color: #bbb;
+}
+
+.code-tip {
+    margin-top: 0.42rem;
+    font-size: 0.24rem;
+    color: #666;
+}
+
+.qrcode {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-size: 100% 100%;
+    object-fit: fill;
+}
+
+.follow-finger {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: 0.82rem;
+    object-fit: fill;
+    /* background-image: url("../images/fingerprint.png");
+    background-size: 100% 100%; */
+}
+
+.follow-tip {
+    width: 100%;
+    margin-top: 0.3rem;
+    font-size: 0.32rem;
+    color: #333;
+    text-align: center;
+}

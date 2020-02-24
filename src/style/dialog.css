@@ -1,0 +1,634 @@
+.dialog {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* 二维码 */
+
+.qrcode {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#code-img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    margin: 0 auto;
+    top: 2rem;
+}
+
+
+/* loading相关 */
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+
+.loading-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-size: 100% 100%;
+    background-image: url("../assets/loading.png");
+}
+
+
+/* 公共浮层按钮 */
+
+.float-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.float-scan {
+    width: 100%;
+    height: 0.44rem;
+    z-index: 301;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 0.44rem;
+    color: #f9f9f9;
+    font-size: 0.2rem;
+    font-weight: 300;
+}
+
+.float-feedback {
+    position: fixed;
+    color: white;
+    right: 0;
+    bottom: 18%;
+    font-size: 0.2rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.2rem;
+    box-sizing: border-box;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-left: 0.01rem solid white;
+    border-top: 0.01rem solid white;
+    border-bottom: 0.01rem solid white;
+    background-color: red;
+    z-index: 101;
+}
+
+.float-music {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-size: 100% 100%;
+    position: fixed;
+    right: 0.4rem;
+    top: 0.4rem;
+    z-index: 101;
+}
+
+.music-off {
+    /*background-image: url("../assets/page/music_off.png");*/
+}
+
+.music-on {
+    /*background-image: url("../assets/page/music_on.png");*/
+}
+
+
+/* 弹框相关 */
+
+.alert-msg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-content {
+    width: 6.3rem;
+    height: 3.12rem;
+    background-color: white;
+    border-radius: 0.1rem;
+}
+
+.alert-title {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.28rem;
+    line-height: 0.52rem;
+    color: #333;
+    border-bottom: 0.01rem solid #ddd;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.alert-buttons {
+    width: 100%;
+    height: 1.12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-cancel {
+    flex: 1;
+    height: 0.4rem;
+    color: #F15A4E;
+    font-size: 0.32rem;
+    line-height: 0.4rem;
+    text-align: center;
+    border-right: 0.02rem solid #ddd;
+}
+
+.alert-sure {
+    flex: 1;
+    height: 0.4rem;
+    color: #0098FF;
+    font-size: 0.32rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+
+.alert-key {
+    height: 2rem;
+    width: 100%;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #ddd;
+}
+
+.key-title {
+    color: #333;
+    font-size: 0.28rem;
+}
+
+.key-input {
+    width: 100%;
+    height: 0.7rem;
+    margin-top: 0.2rem;
+    border: 0.02rem solid #ddd;
+    border-radius: 0.04rem;
+    font-size: 0.28rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+}
+
+
+/* 活动说明/我的奖品 */
+
+.active-info {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    color: white;
+    font-size: 0.24rem;
+    font-weight: 300;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+}
+
+.active-head {
+    width: 100%;
+    height: 1.2rem;
+    border-bottom: 0.01rem solid rgba(255, 255, 255, 0.35);
+}
+
+.head-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem;
+    font-weight: normal;
+}
+
+.head-desc,
+.head-award {
+    margin: 0 0.8rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.head-select {
+    border-bottom: 0.04rem solid white;
+    color: white;
+}
+
+.head-close {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.23rem;
+    right: 0.23rem;
+}
+
+.close-icon {
+    width: 0.36rem;
+    height: 0.36rem;
+    margin: 0.07rem;
+    background-image: url("../assets/close.png");
+    background-size: 100% 100%;
+}
+
+
+/* 活动说明 */
+
+.desc-content {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    overflow: scroll;
+    padding: 0.1rem 0.3rem;
+    box-sizing: border-box;
+}
+
+.desc-item {
+    padding: 0.3rem 0 0.2rem 0;
+    line-height: 0.52rem;
+}
+
+.desc-item-diver {
+    border-bottom: 0.01rem solid rgba(255, 255, 255, 0.2);
+}
+
+.desc-title {
+    font-size: 0.28rem;
+    font-weight: normal;
+}
+
+.desc-value {
+    line-height: 0.52rem;
+}
+
+.desc-link {
+    text-decoration: underline;
+    color: #FF5345;
+    margin-top: 0.2rem;
+}
+
+.desc-img {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    background-size: 100% 100%;
+}
+
+.award-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex: 1;
+    overflow: scroll;
+    padding: 0.6rem 0;
+    box-sizing: border-box;
+}
+
+.nothing {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.award-item {
+    width: 5.5rem;
+    height: 1.8rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    background-image: url("../assets/awardBg.png");
+    background-size: 100% 100%;
+    color: #333;
+}
+
+.award-title {
+    position: absolute;
+    top: 0.52rem;
+    left: 0.6rem;
+    font-weight: normal;
+}
+
+.award-date {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.6rem;
+}
+
+.award-state {
+    width: 0.79rem;
+    height: 0.79rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.28rem;
+    background-size: 100% 100%;
+}
+
+.no-verify {
+    background-image: url("../assets/noVerify.png");
+}
+
+.ok-verify {
+    background-image: url("../assets/okVerify.png");
+}
+
+.no-state {
+    background-image: url("../assets/noState.png");
+}
+
+.ok-state {
+    background-image: url("../assets/okState.png");
+}
+
+.state-invalid {
+    background-image: url("../assets/stateInvalid.png");
+}
+
+
+/* 中奖状态 */
+
+.win-state {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.state-title {
+    margin-top: 0.6rem;
+    font-size: 0.56rem;
+}
+
+.state-img {
+    width: 5.36rem;
+    height: 3.6rem;
+    margin-top: 0.6rem;
+    background-size: 100% 100%;
+}
+
+.state-desc {
+    margin-top: 0.42rem;
+    font-size: 0.36rem;
+}
+
+.state-button {
+    width: 4.2rem;
+    height: 0.84rem;
+    border-radius: 0.4rem;
+    line-height: 0.84rem;
+    text-align: center;
+    font-size: 0.32rem;
+}
+
+.state-sure {
+    margin-top: 1rem;
+    background-color: #0098FF;
+}
+
+.state-cancel {
+    margin-top: 0.3rem;
+    background-color: #F57919;
+}
+
+
+/* 话题详情 */
+
+.obj-content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.4rem 0.4rem 0.4rem;
+    box-sizing: border-box;
+}
+
+.obj-detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.1rem;
+    padding: 0.4rem 0;
+    box-sizing: border-box;
+}
+
+.detail-head {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.4rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-title {
+    flex: 1;
+}
+
+.detail-close {
+    width: 0.47rem;
+    height: 0.47rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+
+.detail-close img {
+    width: 0.27rem;
+    height: 0.27rem;
+}
+
+.detail-list {
+    width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    flex: 1;
+    overflow: scroll;
+}
+
+.detail-item {
+    margin-bottom: 0.3rem;
+}
+
+.detail-img {
+    width: 100%;
+    border-radius: 0.1rem;
+}
+
+.detail-desc {
+    width: 100%;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    color: #333;
+    margin-top: 0.2rem;
+}
+
+
+/* 兑奖核销 */
+
+.center-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 扫码核销 */
+
+.qrcode-content {
+    width: 6.3rem;
+    height: 5.1rem;
+    background-color: white;
+    border-radius: 0.1rem;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.28rem;
+    color: #333333;
+    letter-spacing: 0.01rem;
+}
+
+.qrcode-parent {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    margin-top: 0.2rem;
+    border: 0.01rem solid black;
+    border-radius: 0.1rem;
+}
+
+.qrcode-canvas,
+.qrcode-img {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+}
+
+.qrcode-txt {
+    color: #FF5500;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+}
+
+.qrcode-desc {
+    color: #999999;
+    font-size: 0.24rem;
+    margin-top: 0.2rem;
+}
+
+
+/* 自助核销 */
+
+.qrcode-edit {
+    width: 6.3rem;
+    height: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.1rem;
+    font-size: 0.28rem;
+    color: #333333;
+    letter-spacing: 0.01rem;
+}
+
+.edit-title {
+    margin: 0 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.edit-input {
+    width: 5.1rem;
+    height: 0.7rem;
+    margin-top: 0.2rem;
+    margin-left: 0.4rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    border: 0.02rem solid #DDDDDD;
+    border-radius: 0.04rem;
+    line-height: 0.7rem;
+    font-size: 0.28rem;
+    color: #333333;
+}
+
+.edit-sure {
+    width: 100%;
+    margin-top: 0.4rem;
+    flex: 1;
+    border-top: 0.01rem solid #DDDDDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02rem;
+    font-size: 0.32rem;
+    color: #0098FF;
+}
+
+
+/* 摇一摇 */
+
+.rock-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rock-img {
+    width: 3.04rem;
+    height: 3.04rem;
+    background-image: url("../assets/phoneRock.png");
+    background-size: 100% 100%;
+}
+
+.rock-txt {
+    color: #FEFFD4;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+}

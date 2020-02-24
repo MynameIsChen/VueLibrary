@@ -1,0 +1,209 @@
+/* 奖品详情 */
+
+.award-head {
+    width: 100%;
+    height: 3.7rem;
+    position: relative;
+    background-color: #FFF9DD;
+}
+
+.award-detail {
+    width: 6.5rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    background-image: url("../assets/awardBg.png");
+    background-size: 100% 100%;
+    font-size: 0.24rem;
+    color: #333333;
+    text-align: start;
+}
+
+.award-name {
+    width: 5.5rem;
+    position: absolute;
+    color: #FF5345;
+    top: 0.3rem;
+    left: 0.5rem;
+    font-weight: bold;
+}
+
+.award-desc {
+    width: 5.5rem;
+    height: 0.7rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0.55rem;
+    left: 0.5rem;
+}
+
+.award-time {
+    width: 5.5rem;
+    position: absolute;
+    top: 1.24rem;
+    left: 0.5rem;
+    color: #666666;
+}
+
+.award-copy {
+    width: 100%;
+    position: absolute;
+    bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award-code {
+    font-size: 0.28rem;
+    font-weight: bold;
+    letter-spacing: 0.01rem;
+}
+
+.btn-copy {
+    width: 1.5rem;
+    height: 0.6rem;
+    margin-left: 0.2rem;
+    background-color: white;
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    color: #0098FF;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.copy-desc {
+    width: 100%;
+    position: absolute;
+    bottom: 0.26rem;
+    color: #999999;
+    font-size: 0.24rem;
+    text-align: center;
+}
+
+.tip-desc {
+    width: 100%;
+    position: absolute;
+    bottom: 0.54rem;
+    text-align: center;
+    font-size: 0.48rem;
+    letter-spacing: 0.03rem;
+}
+
+.info-content {
+    width: 100%;
+    height: auto;
+    font-size: 0.24rem;
+    color: #333333;
+    letter-spacing: 0.01rem;
+}
+
+.info-head {
+    width: 100%;
+    height: 0.9rem;
+    padding: 0 0.3rem;
+    margin-bottom: 0.3rem;
+    box-sizing: border-box;
+    line-height: 0.9rem;
+    font-size: 0.28rem;
+    letter-spacing: 0.02rem;
+    font-weight: bold;
+    border-bottom: 0.01rem solid #DDDDDD;
+}
+
+.info-item {
+    width: 100%;
+    /* display: flex; */
+    overflow: hidden;
+    padding: 0 0.3rem 0.2rem 0.3rem;
+    box-sizing: border-box;
+}
+
+.info-title {
+    width: 1.46rem;
+    line-height: 0.4rem;
+    float: left;
+}
+
+.info-desc {
+    /* flex: 1; */
+    width: 5.44rem;
+    float: left;
+    color: #666666;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    text-align: start;
+}
+
+.define-btn {
+    width: 100%;
+    height: 1.06rem;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    border-bottom: 0.16rem solid #F2F2F2;
+    border-top: 0.16rem solid #F2F2F2;
+    line-height: 0.74rem;
+    font-size: 0.24rem;
+    letter-spacing: 0.01rem;
+    color: #0098FF;
+}
+
+.button-exchange {
+    width: 6.1rem;
+    height: 0.9rem;
+    position: fixed;
+    left: 0.7rem;
+    bottom: 0.66rem;
+    border-radius: 0.45rem;
+    background-color: #0098FF;
+    font-size: 0.32rem;
+    color: white;
+    line-height: 0.9rem;
+    text-align: center;
+}
+
+.award-state {
+    width: 0.79rem;
+    height: 0.79rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.28rem;
+    background-size: 100% 100%;
+}
+
+.no-verify {
+    background-image: url("../assets/noVerify.png");
+}
+
+.ok-verify {
+    background-image: url("../assets/okVerify.png");
+}
+
+.no-state {
+    background-image: url("../assets/noState.png");
+}
+
+.ok-state {
+    background-image: url("../assets/okState.png");
+}
+
+.state-invalid {
+    background-image: url("../assets/stateInvalid.png");
+}
+
+.text-value {
+    white-space: pre-wrap;
+    /* css3.0 */
+    white-space: -moz-pre-wrap;
+    /* Firefox */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+    word-break: break-all;
+}
