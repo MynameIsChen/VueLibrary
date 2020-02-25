@@ -9,6 +9,8 @@ import Award from './views/Award.vue'
 import FeedBack from './views/FeedBack.vue'
 import Enroll from './views/Enroll.vue'
 import Player from './views/Player.vue'
+import ListOptions from './views/ListOptions.vue'
+import CutImg from './views/CutImg.vue'
 
 import wx from 'weixin-js-sdk'
 import util from './js/util'
@@ -18,7 +20,7 @@ import app from './js/app'
 // component: () => import( /* webpackChunkName: "about" */ './views/Home.vue')
 const router = new Router({
     mode: 'history',
-    base: '/vote2womenh5/',
+    base: '/VueLibrary/',
     routes: [{
         path: '*',
         name: 'login',
@@ -60,6 +62,14 @@ const router = new Router({
             path: '/player',
             name: 'player',
             component: Player
+        }, {
+            path: '/options',
+            name: 'options',
+            component: ListOptions
+        }, {
+            path: '/cutImg',
+            name: 'cutImg',
+            component: CutImg
         }
     ]
 })

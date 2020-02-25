@@ -17,7 +17,7 @@ let apiType = 3; //1:线上;2:测试;3:开发;4:本地;
 let indexType = 3; //1:线上;2:测试;3:开发;4:本地;
 
 function getProjectName() {
-    return "vote2womenh5";
+    return "VueLibrary";
 }
 
 //获取API地址

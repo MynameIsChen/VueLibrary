@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
     // 基本路径
-    publicPath: '/vote2womenh5/',
+    publicPath: '/VueLibrary/',
 
     // 部署应用时的基本 URL,exp:
     //- Local:   http://localhost:8080/192.168.60.110:8080/

@@ -363,6 +363,11 @@ function _getRankList() {
     return _get(app.getApiPath() + path + "rankingList?campaignId=" + util.getQueryString("campaignId"));
 }
 
+//mi/template/uploadImage
+function _uploadImg(data) {
+    return _post(app.getMiApiPath() + "mi/template/uploadImage" ,data,"multipart/form-data");
+}
+
 
 export default {
     _getCampaignInfo,
@@ -381,5 +386,6 @@ export default {
     _vote,
     _getWorksDetail,
     _getEnrollDetail,
-    _getRankList
+    _getRankList,
+    _uploadImg
 }

@@ -15,6 +15,7 @@
     "qrcodejs2": "^0.0.2",
     "shake.js": "^1.2.2",
     "vue": "^2.6.10",
+    "vue-cropperjs": "^4.0.1",
     "vue-layer": "^1.0.2",
     "vue-router": "^3.0.3",
     "weixin-js-sdk": "^1.4.0-test"
